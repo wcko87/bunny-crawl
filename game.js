@@ -136,7 +136,7 @@ Bunny.prototype = {
             ++this.animframe;
             if (this.animframe >= 27) this.animframe = 0;
         } else {
-            this.animframe = 0;
+            //this.animframe = 0;
         }
     },
     
