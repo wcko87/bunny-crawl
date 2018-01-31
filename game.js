@@ -34,6 +34,7 @@ var MOVE_RIGHT = 1;
 function drawBunny(index, facingRight, px, py) {
     var sy = facingRight ? 71 : 0;
     ctx.save();
+    ctx.imageSmoothingEnabled = false;
     ctx.drawImage(spriteSheet,71*index,sy,71,71,px-71/2,py-71,71,71);
     ctx.restore();
 }
