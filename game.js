@@ -170,11 +170,7 @@ function drawFrame() {
 }
 
 function clearScreen(){
-    ctx.fillStyle = '#00ff00';
-    ctx.beginPath();
-    ctx.rect(0, 0, RES_X, RES_Y);
-    ctx.closePath();
-    ctx.fill();
+    ctx.clearRect(0, 0, RES_X, RES_Y);
 };
 
 function gameLoop(time){
